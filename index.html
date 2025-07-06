@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/1bf864ccde6f3972f894dcdf25b0e47f?family=AvantGarde-Bold"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/split-type" defer></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js" defer></script> 
+    <script src="script.js" defer></script>
+    <script src="vanta.js" defer></script>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div id="herobanner">
+        <div class="header">
+            <img src="images/logo.png" alt="" class="logo">
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="container">
+                <h3 class="name">- UVEJS MIKULLOVCI -</h3>
+                <h1 id="mainText1">Concept</h1>
+                <h1 id="mainText2">Into</h1>
+                <h1 id="mainText3">Reality</h1>
+                <h1 id="mainText4">Using</h1>
+                <h1 id="mainText5">Code</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h3>ABOUT ME</h3>
+        <p id="appearingText">I am a <span class="orange">web developer</span> passionate about creating beautiful, functional websites with unique character and style.</p>
+    </div>
+    <div id="work">
+        <h3>WHAT I DO</h3>
+        <div class="boldText">
+            <hr>
+            <div class="row" id="whatIdoRow">
+                <h1 id="whatIdoText">Coding</h1><p>I can write clean, efficient, and scalable code for websites.</p>
+            </div>
+            <hr>
+            <div class="row" id="whatIdoRow">
+                <h1 id="whatIdoText">Debugging</h1><p> I can identify and fix errors to ensure smooth functionality.</p>
+            </div>
+            <hr>
+            <div class="row" id="whatIdoRow">
+                <h1 id="whatIdoText">Optimizing</h1><p>I can enhance website performance, speed, and overall user experience.</p>
+            </div>
+            <hr>
+            <div class="row" id="whatIdoRow">
+                <h1 id="whatIdoText">Deploying</h1><p>I can launch websites seamlessly, ensuring stability and reliability online.</p>
+            </div>
+            <hr>
+            <div class="row" id="whatIdoRow">
+                <h1 id="whatIdoText">Maintaining</h1><p>I can update, secure, and improve websites for long-term success.</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div id="experience">
+        <div class="container">
+            <h3>EXPERIENCE</h3>
+            <p id="appearingText2">
+                Over 3 Years of experience in making 
+                interactive and 
+                efficient websites and working with some of the most 
+                talented people in the field.
+            </p>   
+        </div>
+    </div>
+    <div id="history">
+        <h3>HISTORY</h3>
+        <div class="boldText">
+            <hr>
+            <div class="row" id="whatIdoRow">
+                <h1 id="whatIdoText" class="time">NOW</h1><h1 id="whatIdoText">Full Stack Developer</h1><p>Google</p>
+            </div>
+            <hr>
+            <div class="row" id="whatIdoRow">
+                <h1 id="whatIdoText" class="time">2024</h1><h1 id="whatIdoText">Front End Devleoper</h1><p>Apple</p>
+            </div>
+            <hr>
+            <div class="row" id="whatIdoRow">
+                <h1 id="whatIdoText" class="time">2022</h1><h1 id="whatIdoText">Wordpress Dev.</h1><p>BeeDirect</p>
+            </div>
+            <hr>
+            <div class="row" id="whatIdoRow">
+                <h1 id="whatIdoText" class="time">2021</h1><h1 id="whatIdoText">FrontEnd Developer</h1><p>FaceBook</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="projectsTextPart">
+            <h1 class="projectTitle">MY PROJECTS</h1>
+            <p>Here are some of the selected projects that showcase my passion as a Software Engineer.</p>
+        </div>
+    </div>
+    <div id="projectContainer">
+    </div>
+</body>
+
+</html>

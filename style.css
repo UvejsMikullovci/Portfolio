@@ -1,0 +1,375 @@
+/* === BASE STYLES === */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #111111;
+    height: auto;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.circle {
+    --cursor-size: 40px;
+    position: fixed;
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    background-color: #eb5939;
+    border-radius: 50%;
+    top: calc(-1 * var(--cursor-size) / 2);
+    left: calc(-1 * var(--cursor-size) / 2);
+    pointer-events: none;
+    z-index: 9998;
+}
+
+/* === HEADER === */
+.header {
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: transparent;
+}
+
+.logo {
+    height: 70px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #565047;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav li:first-child a,
+.nav a:hover {
+    color: #aea18f;
+}
+
+.nav a:active {
+    color: #565047;
+}
+
+/* === HERO === */
+#herobanner {
+    z-index: 9997;
+    margin-bottom: 10rem;
+    width: 100%;
+    height: 100vh;
+    mask-image: linear-gradient(to top, transparent 5%, #111111f5 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#herobanner .main {
+    font-family: "AvantGarde-Bold";
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 700;
+    color: #b7aa98;
+    padding: 1rem;
+}
+
+#herobanner .main h3 {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-family: 'ITC Avant Garde Pro Md', sans-serif;
+    margin-bottom: 1rem;
+}
+
+#herobanner .main h1 {
+    color: #b7aa98;
+    line-height: 90%;
+    transition: 1s ease-in-out;
+}
+
+#herobanner .main h1:nth-child(3),
+h1:nth-child(4) {
+    color: #eb5939;
+}
+
+#herobanner .main h1:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/* === ABOUT SECTION === */
+#about {
+    color: white;
+    padding: 0 5%;
+    margin-bottom: 15rem;
+}
+
+#about h3,
+#work h3,
+#experience h3,
+#history h3 {
+    font-family: 'ITC Avant Garde Pro Md', sans-serif;
+    font-size: 1.75rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #b7aa98;
+    letter-spacing: 5px;
+}
+
+#about p,
+#experience p {
+    font-family: "AvantGarde-Bold";
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 300;
+    color: #b7aa98;
+}
+
+.orange {
+    color: #eb5939 !important;
+}
+
+/* === WORK SECTION === */
+#work,
+#history {
+    margin-bottom: 15rem;
+}
+
+#work h1,
+#history h1 {
+    font-family: "AvantGarde-Bold";
+    font-size: clamp(2rem, 8vw, 6rem);
+    font-weight: 300;
+    color: #b7ab98;
+}
+
+#work p,
+#history p {
+    font-family: "AvantGarde-Bold";
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #111;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    max-width: 100%;
+}
+
+#work .row,
+#history .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    padding: 0 5%;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#work h1:hover + p,
+#history h1:hover + p {
+    opacity: 1;
+    color: #b7ab98;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: #262522;
+}
+
+/* === EXPERIENCE SECTION === */
+#experience {
+    width: 100%;
+    mask-image: linear-gradient(to bottom,
+        transparent 10%,
+        rgba(17, 17, 17, 0.5) 30%,
+        #111111f5 50%,
+        rgba(17, 17, 17, 0.5) 70%,
+        transparent 90%);
+    -webkit-mask-image: linear-gradient(to bottom,
+        transparent 10%,
+        rgba(17, 17, 17, 0.5) 30%,
+        #111111f5 50%,
+        rgba(17, 17, 17, 0.5) 70%,
+        transparent 90%);
+    color: white;
+    margin-bottom: 7rem;
+    padding: 20% 5% 0 5%;
+}
+
+/* === PROJECT CARD === */
+.project-card {
+    width: 90%;
+    max-width: 1200px;
+    font-family: Manrope;
+    font-weight: 500;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #d1cfcc;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.project-card h2 {
+    font-size: 2rem;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #c7c7c7;
+}
+
+.project-card a {
+    color: #eb5939;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-card a i {
+    margin-left: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #727272;
+    margin: 1rem 0;
+}
+
+/* === PROJECT TEXT PART === */
+.projectsTextPart {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projectsTextPart h1 {
+    color: #d1cfcc;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-family: "AvantGarde-Bold";
+}
+
+.projectsTextPart p {
+    color: #d1cfcc;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: "AvantGarde-Bold";
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-image {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    #work p,
+    #history p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 50px;
+    }
+
+    .project-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .project-card p {
+        font-size: 0.875rem;
+    }
+
+    .projectsTextPart h1 {
+        font-size: 2rem;
+    }
+
+    .projectsTextPart p {
+        font-size: 0.875rem;
+    }
+}
