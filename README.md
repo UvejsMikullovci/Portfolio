@@ -29,14 +29,5 @@ A personal portfolio website built using **HTML**, **CSS**, and **JavaScript**, 
 
 ## 📸 Screenshots
 
-> _Add screenshots or a demo GIF here for visual impact!_  
-> _(Example: `/images/demo.gif`)_
+![image](./images/123.png)
 
----
-
-## 🚀 How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/old-portfolio.git
-   cd old-portfolio
